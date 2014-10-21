@@ -1,10 +1,11 @@
-var app = angular.module('cgonul_static_web_site', ['ngRoute']);
+var app = angular.module('cgonul_static_web_site', ['ngRoute','gist']);
 
 app.config(['$routeProvider', function ($routeProvider) {
     $routeProvider
         // Home
         .when("/", {templateUrl: "pages/home.html", controller: "PageCtrl"});
 }]);
+
 
 
 /**
